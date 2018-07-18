@@ -37,9 +37,8 @@ app.delete('/streams/:id', (req, res) => {
     res.send();
 });
 
-app.delete('/streams/:id/watch_events', (req, res) => {
-    const { id } = req.params;
-    const { event } = req.body;
+app.delete('/streams/:id/watch_events/:event', (req, res) => {
+    const { id, event } = req.params;
     manager.removeWatchEvent(id, event);
     res.send(id);
 });
