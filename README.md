@@ -10,6 +10,15 @@ Open a prompt to the root folder & install dependencies first with npm or yarn. 
 
 Start the connector by running: ```npm start run```
 
+## How to run in Docker
+First, pull the image from the repository.
+
+```docker pull s0uldrag0n/elasticmongoconnector```
+
+Then run the container.
+
+```docker run -p [hostPort]:3000 s0uldrag0n/elasticmongoconnector```
+
 ## How to Use
 To start monitoring streams, we have to first provide some information to the connector through the REST API. This data is not persisted so restarting the connector will require a resubmission of the same information. The default port used is 3000 unless the **CONNECTOR_API_PORT** environment variable is provided specifying otherwise.
 
@@ -50,5 +59,5 @@ Lastly, the **elasticTypeOverride** property is the type set for the records sav
 ```
 
 # Future Roadmap
-- [ ] Containerize in Docker
+- [x] Containerize in Docker
 - [ ] Persist settings
