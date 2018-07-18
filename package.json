@@ -1,0 +1,31 @@
+{
+  "name": "elasticmongoconnector",
+  "version": "1.0.0",
+  "description": "Monitors MongoDB change streams and submits the events to Elasticsearch.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node ./src/index.js"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "javascript",
+    "elasticsearch",
+    "connector"
+  ],
+  "author": "Andy Huang",
+  "license": "MIT",
+  "dependencies": {
+    "elasticsearch": "^15.1.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
