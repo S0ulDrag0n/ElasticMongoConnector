@@ -24,7 +24,9 @@ export class MongoChangeStreamWatcher {
         this._initializeElasticClient(elasticHosts);
     }
     _initializeElasticClient = elasticHosts => {
-        this._elasticClient = new elasticsearch.Client(elasticHosts);
+        this._elasticClient = new elasticsearch.Client({
+            hosts: elasticHosts,
+        });
 
         console.log('-- Client Health --');
         this._elasticClient.cluster.health({}, (err,resp,status) =>  {  
