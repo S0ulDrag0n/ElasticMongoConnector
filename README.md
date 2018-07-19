@@ -1,4 +1,4 @@
-# ElasticMongoConnector
+# An Elasticsearch Mongo Connector
 A REST API based connector that subscribes to change streams in MongoDB and saves them in Elasticsearch.
 
 Requires MongoDB >=3.6
