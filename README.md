@@ -1,6 +1,12 @@
 # ElasticMongoConnector
 A REST API based connector that subscribes to change streams in MongoDB and saves them in Elasticsearch.
 
+Requires MongoDB >=3.6
+
+Tested with:
+*MongoDB 4.0 Community Edition*
+*Elasticsearch 6.3*
+
 ## How to Start
 Open a prompt to the root folder & install dependencies first with npm or yarn. Yarn is recommended.
 
