@@ -54,7 +54,9 @@ Lastly, the **elasticTypeOverride** property is the type set for the records sav
   "elasticIndices": [
     "[indexName]"
   ],
-  "elasticTypeOverride": "[elasticType]" 
+  "elasticTypeOverride": "[elasticType]",
+  "requestLimit": 100,  // Default 100
+	"requestTimeout": 0   // Default 0
 }
 ```
 
